@@ -17,7 +17,7 @@ int main(void)
 		while (ij < 100)
 		{
 			putchar(xy / 10 + '0');
-			putchar(xy % 10 +'0');
+			putchar(xy % 10 + '0');
 			putchar(' ');
 			putchar(ij / 10 + '0');
 			putchar(ij % 10 + '0');
