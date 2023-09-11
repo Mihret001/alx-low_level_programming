@@ -8,40 +8,28 @@
 
 int main(void)
 {
-	int x = 0;
+	int xy = 0;
 
-	while (x < 10)
+	while (xy < 99)
 	{
-		int y = 0;
+		int ij = xy + 1;
 
-		while (y < 9)
+		while (ij < 100)
 		{
-			int i = 0;
-			
-			while (i < 10)
-			{
-				int j = i + 1;
-
-				while (j <10)
-				{
-			putchar(x + '0');
-			putchar(y + '0');
+			putchar(xy / 10 + '0');
+			putchar(xy % 10 +'0');
 			putchar(' ');
-			putchar(i + '0');
-			putchar(j + '0');
-			if (x != 9 || y != 9 || i != 9 || j != 9)
+			putchar(ij / 10 + '0');
+			putchar(ij % 10 + '0');
+			if (xy != 98 || ij != 99)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			j++;
-				}
-			i++;
-			}		
-		y++;
-		}
-		x++;
-	}	
+			ij++;
+			}
+			xy++;
+			}
 	putchar('\n');
 
 	return (0);
