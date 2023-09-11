@@ -13,7 +13,7 @@ int main(void)
 	while (x < 8)
 	{
 		int y = x + 1;
-		 
+
 		while (y < 9)
 		{
 			int z = y + 1;
