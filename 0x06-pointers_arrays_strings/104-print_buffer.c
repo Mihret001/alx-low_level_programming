@@ -19,7 +19,7 @@ void print_buffer(char *b, int size)
 				: printf("  ");
 			(y % 2) ? printf(" ") : 0;
 		}
-		for (z = 0; z < 10; x++)
+		for (z = 0; z < 10; z++)
 			(x + z < size) ? printf("%c", (b[x + z] >= 32 &&
 				b[x + z] <= 126) ? b[x + z] : '.') : 0;
 
