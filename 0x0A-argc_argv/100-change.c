@@ -3,15 +3,16 @@
 #include "main.h"
 
 /**
- * main - prints the minimum number of coins to make change for an amount of money
+ * main - prints the minimum number of coins to
+ * make change for an amount of money
  * @argc: number of arguments
- * @argv: array of strings/arguments
- * Return: 0 or 1
+ * @argv: an array of arguments
+ *
+ * Return: 0 for success
  */
-
 int main(int argc, char *argv[])
 {
-	int x, y, res;
+	int num, j, result = 0;
 	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
@@ -20,24 +21,21 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	x = atoi(argv[1]);
-	res = 0;
-
-	if (x < 0)
+	num = atoi(argv[1]);
+	if (num < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-
-	for (y = 0; y < 5 && x >= 0; y++)
+	for (j = 0; j < 5 && num >= 0; j++)
 	{
-		while (x >= coins[y])
+		while (num >= coins[j])
 		{
-			res++;
-			x -= coins[y];
+			result++;
+			num -= coins[j];
 		}
 	}
 
-	printf("%d\n", res);
+	printf("%d\n", result);
 	return (0);
 }
