@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 	}
 	x--;
 	}
-printf("d%\n", coins);
+printf("%d\n", y);
 
 return (0);
 }
