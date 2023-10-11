@@ -1,0 +1,29 @@
+#include "3-calc.h"
+#include <stdio.h>
+
+/**
+ * get_op_func - picks the correct operator
+ * @s: operator that is passed
+ * Return: pointer to a function that corresponds to a given operator
+ */
+
+int (*get_op_func(char *s))(int, int)
+{
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
+	int x = 0;
+	
+	while (x < 10)
+	{
+		if (s[0] == ops->op[x])
+			break;
+		x++;
+	}
+	return (ops[x / 2].f);
+}
