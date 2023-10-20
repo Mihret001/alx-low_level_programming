@@ -12,7 +12,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *x, *y;
 	size_t z;
 
-	new = malloc(sizeof(list_t));
+	x = malloc(sizeof(list_t));
 	if (x == NULL)
 		return (NULL);
 
