@@ -5,19 +5,18 @@
  * @head: head of a list
  * Return: void
  */
+
 void free_listint2(listint_t **head)
 {
-	listint_t *x = NULL;
-	listint_t *y = NULL;
-
+	listint_t *x;
+	
 	if (head == NULL)
 		return;
-	temp = *x;
-	while (x != NULL)
+
+	while (*head != NULL)
 	{
-		y = x;
-		x = x->next;
-		free(y);
+		x = (*head)->next;
+		free(*head);
+		*head = x;
 	}
-	*head = NULL;
 }
