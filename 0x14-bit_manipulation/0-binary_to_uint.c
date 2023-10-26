@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * binary_to_unit - converts binary to unsinged int
+ * binary_to_uint - converts binary to unsinged int
  * @b: binary to be converted
  * Return: 0 if null or unsinged int
  */
