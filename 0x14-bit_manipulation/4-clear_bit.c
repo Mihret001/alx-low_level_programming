@@ -3,7 +3,7 @@
 
 /**
  * clear_bit - set the value of a bit to 0
- * @n: decimal number to change
+ * @n: number to change
  * @index: position to change
  * Return: 1 or -1
  */
