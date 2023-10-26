@@ -2,7 +2,7 @@
 
 /**
  * set_bit - sets value of a bit to 1
- * @n: decimal number
+ * @n: number
  * @index: position to change
  * Return: 1 or -1
  */
